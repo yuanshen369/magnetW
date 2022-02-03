@@ -250,7 +250,7 @@
     "id": "clzz",
     "name": "磁力蜘蛛",
     "proxy": false,
-    "url": "http://www.eclzz.net",
+    "url": "http://www.btmovi.store",
     "paths": {
       "preset": "/s/{k}_rel_{p}.html",
       "time": "/s/{k}_time_{p}.html",
