@@ -38,7 +38,7 @@
     "id": "idope",
     "name": "idope",
     "proxy": true,
-    "url": "https://ww1.idope.cyou",
+    "url": "https://idope.cyou",
     "paths": {
       "preset": "/torrent-list/{k}/?p={p}",
       "size": "/torrent-list/{k}/?p={p}&o=-2"
@@ -55,20 +55,21 @@
     }
   },
   {
-  "id": "btsow",
-  "name": " BTSOW ",
-  "url": "https://btsow.rest",
-  "icon": "https://btsow.rest/favicon.ico",
-  "paths": {
-    "preset": "/search/{k}",
-    "size": "//btsow.rest/magnet/detail/hash/{p}FBAB6302787488C029F9719F33A2DE8D0C24"
-  },
-  "xpath": {
-    "group": "//div[@class='data-list']",
-    "magnet": "./div[3]/a[1]/@href",
-    "name": "./div[3]/a[1]",
-    "size": "./div[5]/div[1]",
-    "date": "./div[5]/div[2]"
+    "id": "btsow",
+    "name": "BTSOW",
+    "proxy": false,
+    "url": "https://btsow.rest",
+    "paths": {
+      "preset": "/search/{k}/page/{p}"
+    },
+    "xpath": {
+      "group": "//div[@class='row']",
+      "magnet": "./a/@href",
+      "name": "./a/div[1]",
+      "size": "./div[1]",
+      "date": "./div[2]",
+      "detail": {
+        "files": "//div[@class=\"detail data-list\"]/div/text()"
       }
     }
   },
@@ -133,22 +134,22 @@
     }
   },
   {
- "id": "btmovi",
-  "name": "磁力蜘蛛",
-  "url": "http://www.btmovi.store",
-  "icon": "http://www.btmovi.store/favicon.ico",
-  "paths": {
-    "preset": "/so/{k}.html",
-    "time": "/so/{k}_time_{p}.html",
-    "size": "/so/{k}_size_{p}.html"
-  },
-  "xpath": {
-    "group": "//div[@class='search-item']",
-    "magnet": "./div[1]/h3[1]/a[1]/@href",
-    "name": "./div[1]/h3[1]/a[1]",
-    "size": "./div[3]/span[3]/b[1]",
-    "date": "./div[3]/span[2]/b[1]",
-    "hot": "./div[3]/span[4]/b[1]"
+    "id": "clzz",
+    "name": "磁力蜘蛛",
+    "proxy": false,
+    "url": "http://www.btmovi.store",
+    "paths": {
+      "preset": "/s/{k}_rel_{p}.html",
+      "time": "/s/{k}_time_{p}.html",
+      "size": "/s/{k}_size_{p}.html"
+    },
+    "xpath": {
+      "group": "//div[@class='search-item']",
+      "magnet": "./div[1]/h3[1]/a[1]/@href",
+      "name": "./div[1]/h3[1]/a[1]",
+      "size": "./div[3]/span[3]/b[1]",
+      "date": "./div[3]/span[2]/b[1]",
+      "hot": "./div[3]/span[4]/b[1]"
     }
   },
   {
