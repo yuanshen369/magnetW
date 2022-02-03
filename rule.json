@@ -58,7 +58,7 @@
     "id": "btsow",
     "name": "BTSOW",
     "proxy": false,
-    "url": "https://btsow.one",
+    "url": "https://btsow.rest",
     "paths": {
       "preset": "/search/{k}/page/{p}"
     },
@@ -134,22 +134,22 @@
     }
   },
   {
-    "id": "clzz",
-    "name": "磁力蜘蛛",
-    "proxy": false,
-    "url": "http://www.btmovi.store",
-    "paths": {
-      "preset": "/s/{k}_rel_{p}.html",
-      "time": "/s/{k}_time_{p}.html",
-      "size": "/s/{k}_size_{p}.html"
-    },
-    "xpath": {
-      "group": "//div[@class='search-item']",
-      "magnet": "./div[1]/h3[1]/a[1]/@href",
-      "name": "./div[1]/h3[1]/a[1]",
-      "size": "./div[3]/span[3]/b[1]",
-      "date": "./div[3]/span[2]/b[1]",
-      "hot": "./div[3]/span[4]/b[1]"
+ "id": "btmovi",
+  "name": "磁力蜘蛛",
+  "url": "http://www.btmovi.store",
+  "icon": "http://www.btmovi.store/favicon.ico",
+  "paths": {
+    "preset": "/so/{k}.html",
+    "time": "/so/{k}_time_{p}.html",
+    "size": "/so/{k}_size_{p}.html"
+  },
+  "xpath": {
+    "group": "//div[@class='search-item']",
+    "magnet": "./div[1]/h3[1]/a[1]/@href",
+    "name": "./div[1]/h3[1]/a[1]",
+    "size": "./div[3]/span[3]/b[1]",
+    "date": "./div[3]/span[2]/b[1]",
+    "hot": "./div[3]/span[4]/b[1]"
     }
   },
   {
