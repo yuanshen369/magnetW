@@ -38,7 +38,7 @@
     "id": "idope",
     "name": "idope",
     "proxy": true,
-    "url": "https://idope.cyou",
+    "url": "https://ww1.idope.cyou",
     "paths": {
       "preset": "/torrent-list/{k}/?p={p}",
       "size": "/torrent-list/{k}/?p={p}&o=-2"
